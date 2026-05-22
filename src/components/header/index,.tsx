@@ -6,7 +6,7 @@ export default function Header() {
     <header className="header">
       <h1>Store</h1>
       <nav>
-        <Link to={`/`}>Home</Link>
+        <Link to={`/`}>BigStore</Link>
         <Link to={`/carrinho`}>Carrinho</Link>
       </nav>
     </header>

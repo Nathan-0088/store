@@ -1,0 +1,105 @@
+.carContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1080px;
+  min-height: 55dvh;
+
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carContainer ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.carContainer ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 10px 0;
+  background-color: #1d4fd860;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  width: 100%;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.carContainer h2 button {
+  padding: 7px 14px;
+  background-color: rgb(50, 51, 52);
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s;
+  margin-left: 5px;
+}
+
+.carContainer h2 button:hover {
+  transform: scale(1.1);
+}
+
+.cardetails {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.cardetails p {
+  color: rgb(16, 124, 16);
+  font-size: 17px;
+}
+
+.cardetails h1 {
+  font-size: 15px;
+}
+
+.bntDeletecar {
+  padding: 10px 7px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+
+  border: 0;
+  border-radius: 10px;
+
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.bntDeletecar:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .carContainer {
+    padding: 15px;
+  }
+
+  .carContainer ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .cardetails {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .bntDeletecar {
+    width: 100%;
+  }
+}

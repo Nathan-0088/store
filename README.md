@@ -1,76 +1,96 @@
-# React + TypeScript + Vite
+# 🛒 DevShop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto de e-commerce desenvolvido com React + TypeScript consumindo uma API de produtos.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- TypeScript
+- React Router DOM
+- Axios
+- React Toastify
+- CSS Modules / CSS puro
+- LocalStorage
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## ✨ Funcionalidades
 
-Note: This will impact Vite dev & build performances.
+- Listagem de produtos
+- Página de detalhes do produto
+- Carrinho de compras
+- Adicionar produtos ao carrinho
+- Remover produtos do carrinho
+- Persistência de dados com LocalStorage
+- Total de compras automático
+- Layout responsivo
+- Notificações com Toastify
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📸 Preview
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Adicione prints do projeto aqui.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Instalação
+
+Clone o projeto:
+
+```bash
+git clone https://github.com/seuusuario/devshop.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Entre na pasta:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd devshop
 ```
-# store
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o projeto:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🧠 Aprendizados
+
+Nesse projeto foram praticados conceitos como:
+
+- Componentização
+- Hooks do React
+- useState
+- useEffect
+- Tipagem com TypeScript
+- Manipulação de arrays
+- Consumo de API
+- Rotas
+- Responsividade
+- Persistência de dados
+
+---
+
+## 👨‍💻 Desenvolvedor
+
+### Nathaniel Alves Ribeiro
+
+Desenvolvedor Full Stack
+
+GitHub:
+
+[https://github.com/seuusuario](https://github.com/Nathan-0088)
+
+---
+
+## 📄 Licença
+
+Projeto desenvolvido para estudos.
